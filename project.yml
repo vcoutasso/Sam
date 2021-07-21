@@ -1,0 +1,21 @@
+name: Sam
+
+settings:
+  DEVELOPMENT_TEAM: H7BM7N56V5
+
+options:
+  bundleIdPrefix: com.vcoutasso
+  deploymentTarget:
+    iOOS: 14.0
+
+targets:
+  Sam:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sam
+    preBuildScripts:
+      - name: SwiftLint
+        script: |
+          "${PODS_ROOT}/SwiftLint/swiftlint"
+
