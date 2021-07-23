@@ -17,13 +17,23 @@ class ViewController: UIViewController {
 
     // MARK: - Private Methods
 
+    private func createView() -> UIView {
+        let view = UIView()
+
+        view.backgroundColor = .black
+
+        return view
+    }
+
     private func createTextView() -> UILabel {
         let textView = UILabel()
 
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .right
         textView.text = model.currentChapterText
-        textView.font = UIFont.systemFont(ofSize: 24)
+        textView.font = UIFont(name: "Kenney-Future-Narrow", size: 24)
+//        textView.font = UIFont.systemFont(ofSize: 24)
+        textView.textColor = .white
 
         return textView
     }
@@ -33,6 +43,7 @@ class ViewController: UIViewController {
             let button = UIButton()
             button.setTitleColor(.systemBlue, for: .normal)
             button.setTitle(choice, for: .normal)
+            button.contentHorizontalAlignment = .leading
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
             return button
@@ -53,8 +64,7 @@ class ViewController: UIViewController {
     // MARK: - Overridden Methods
 
     override func loadView() {
-        view = UIView()
-        view.backgroundColor = .white
+        view = createView()
 
         chapterText = createTextView()
         view.addSubview(chapterText)
@@ -82,7 +92,7 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.5,
                        delay: 0,
                        usingSpringWithDamping: 0.7,
-                       initialSpringVelocity: 3,
+                       initialSpringVelocity: 2,
                        options: .allowUserInteraction) {
             sender.transform = CGAffineTransform.identity
         }
