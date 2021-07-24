@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  Sam
+
+  Created by Vinícius Couto on 23/07/21.
+  
+*/
+
+"newGame" = "New Game";
+"credits" = "Credits";
+"quit" = "Quit";
+
+"Plot.birth" = "You wake up in a warm void.
+You feel a sudden discomfort as you're being squished and pushed.
+Then you feel hands grabbing your head and light fills your sight.
+A strong metallic scent overtakes you.
+\"Sam\", you hear.";
+
+"Choices.cry" = "Cry";
+"Choices.reachOut" = "Reach out and grab";
+
+"Plot.cry" = "You are wrapped up in a blanket and held.
+\"Oh, you're beautiful\" a soft voice says.";
+
+"Plot.reachOut" = "You grab something fleshy yet firm.
+\"Ow, my nose!\" a deep voice says.
+You're turned around and lose your grasp.
+Light slaps hit your back and you start to cry.";
+
+"Choices.childhood" = "Childhood";
+
+"Plot.childhoodIfCried" = "On your seventh birthday your parents are looking to buy you a gift.
+They take you to a shopping mall on the suburbs and walk around to see what interests you.";
+
+"Choices.videogame" = "You want to check out the new videogame.";
+"Choices.actionFigure" = "You want to take a look at the newest collection of action figures.";
+"Choices.hungry" = "You feel too hungry to choose right now.";
+
+"Plot.childhoodIfNotCried" = "On your eighth birthday your parents are looking to buy you a gift.
+They take you to a sports shop on the suburbs and walk around to see what interests you.";
+
+"Choices.skate" = "Your are delighted with the skateboard and go for it.";
+"Choices.bike" = "You ask for a new bike to replace your old one.";
+//"Choices.goEat" = "Ask to go somewhere to eat";
+
+"Plot.hungry" = "Your parents take you to a McDonalds to eat a happy meal.";
+
+"Choices.mike" = "Pick Wazowski";
+"Choices.sulley" = "Pick Sulley";
+"Choices.boo" = "Pick Boo";
+
+

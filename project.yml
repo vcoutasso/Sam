@@ -18,4 +18,7 @@ targets:
       - name: SwiftLint
         script: |
           "${PODS_ROOT}/SwiftLint/swiftlint"
+      - name: SwiftGen
+        script: |
+          "${PODS_ROOT}/SwiftGen/bin/swiftgen"
 

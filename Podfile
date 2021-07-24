@@ -7,6 +7,7 @@ target 'Sam' do
   # Pods for Sam
   pod 'SwiftFormat/CLI'
   pod 'SwiftLint'
+  pod 'SwiftGen'
 
 end
 

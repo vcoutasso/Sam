@@ -8,7 +8,14 @@
 import Foundation
 
 struct Story {
+    // MARK: - Variables
+
     var currentChapter: Int = 0
+
+    // Story modifiers
+    var didSamCry: Bool = false
+
+    // MARK: - Computed Variables
 
     var currentChapterText: String {
         chapterTexts[currentChapter]
@@ -18,9 +25,22 @@ struct Story {
         chapterChoices[currentChapter]
     }
 
-    private let chapterTexts: [String] = ["My text here"]
-    private let chapterChoices: [[String]] = [["First option", "Second option"]]
+    // MARK: - Private Variables
 
-    // Story modifiers
-    var didSamCry: Bool = false
+    private let chapterTexts: [String] = [
+        Strings.Plot.birth,
+        Strings.Plot.cry,
+        Strings.Plot.reachOut,
+        Strings.Plot.childhoodIfCried,
+        Strings.Plot.childhoodIfNotCried,
+        Strings.Plot.hungry,
+    ]
+    private let chapterChoices: [[String]] = [
+        [Strings.Choices.cry, Strings.Choices.reachOut],
+        [Strings.Choices.childhood],
+        [Strings.Choices.videogame, Strings.Choices.actionFigure],
+        [Strings.Choices.skate, Strings.Choices.bike],
+        [Strings.Choices.hungry],
+        [Strings.Choices.mike, Strings.Choices.sulley, Strings.Choices.mike],
+    ]
 }

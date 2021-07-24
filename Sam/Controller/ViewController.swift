@@ -29,11 +29,14 @@ class ViewController: UIViewController {
         let textView = UILabel()
 
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.textAlignment = .right
+        textView.textAlignment = .left
+        textView.numberOfLines = 0
         textView.text = model.currentChapterText
         textView.font = UIFont(name: "Kenney-Future-Narrow", size: 24)
-//        textView.font = UIFont.systemFont(ofSize: 24)
         textView.textColor = .white
+
+        print(Plot.as)
+        print(Plot.abcde)
 
         return textView
     }
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
             let button = UIButton()
             button.setTitleColor(.systemBlue, for: .normal)
             button.setTitle(choice, for: .normal)
+            button.titleLabel?.font = UIFont(name: "Kenney-Future-Narrow", size: 24)
             button.contentHorizontalAlignment = .leading
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
@@ -53,8 +57,8 @@ class ViewController: UIViewController {
     private func createStackView() -> UIStackView {
         let stackView = UIStackView(arrangedSubviews: createChoiceButtons())
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.alignment = .fill
+        stackView.distribution = .fill
+        stackView.alignment = .top
         stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -75,6 +79,8 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             chapterText.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor),
             chapterText.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            chapterText.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+//            choicesStackView.topAnchor.constraint(greaterThanOrEqualTo: chapterText.bottomAnchor),
             choicesStackView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
             choicesStackView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
         ])
