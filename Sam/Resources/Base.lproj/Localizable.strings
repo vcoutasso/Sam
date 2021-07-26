@@ -39,14 +39,24 @@ They take you to a shopping mall on the suburbs and walk around to see what inte
 "Plot.childhoodIfNotCried" = "On your eighth birthday your parents are looking to buy you a gift.
 They take you to a sports shop on the suburbs and walk around to see what interests you.";
 
-"Choices.skate" = "Your are delighted with the skateboard and go for it.";
+"Choices.skate" = "You are delighted with the skateboard and decide to go for it.";
 "Choices.bike" = "You ask for a new bike to replace your old one.";
 //"Choices.goEat" = "Ask to go somewhere to eat";
 
-"Plot.hungry" = "Your parents take you to a McDonalds to eat a happy meal.";
+"Plot.hungry" = "Your parents take you to a McDonalds to eat a happy meal. You must choose your toy.";
 
 "Choices.mike" = "Pick Wazowski";
 "Choices.sulley" = "Pick Sulley";
 "Choices.boo" = "Pick Boo";
 
+"Plot.mcDonalds" = "Your stomach is full, but you're too tired to go out today looking for a gift. A gift is a gift even if it's past your birthday, right? Let's go home.";
 
+"Plot.videogame" = "You come home all excited about the new gift and spend the next two days glazed over, playing non-stop. It's the best gift ever!";
+
+"Plot.actionFigure" = "Eager to start playing, you unwrap your gift on the way home and, as a speed bump goes unnoticed by your parents, you end up taking an arm off your brand new toy on accident. What a shame.";
+
+"Plot.skate" = "The next couple weeks are nothing but hard training as you do your best to master the wheeled board. Unfortunately, when you try your newly learned maneuvers at high speed, you end up falling end breaking an arm. There goes your long-awaited vacation.";
+
+"Plot.bike" = "As you think about exactly what to do with an old bike that's no longer fit for you, you're reminded of a neighbor who never got a chance to learn to ride. You decide you want to give them that chance, so you give them your old bike and help them get started. Cool, now you have a new friend too!";
+
+"Choices.end" = "End";
