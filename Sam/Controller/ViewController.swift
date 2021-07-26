@@ -31,12 +31,9 @@ class ViewController: UIViewController {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .left
         textView.numberOfLines = 0
-        textView.text = model.currentChapterText
+        textView.setTyping(text: model.currentChapterText)
         textView.font = UIFont(name: "Kenney-Future-Narrow", size: 24)
         textView.textColor = .white
-
-        print(Plot.as)
-        print(Plot.abcde)
 
         return textView
     }
